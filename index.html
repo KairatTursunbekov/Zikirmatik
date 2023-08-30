@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        border-radius: 20px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 5px 5px gray;
+    }
+    .main #button{
+        width: 100px;
+        border-radius: 10%;
+        margin-top: 20px;
+        margin-left: 36%;
+        height: 30px;
+        cursor: pointer;
+    }
+    #one,#two,#three,#four{
+        display: none;
+    }
+</style>
+<body>
+    <div class="main">
+        <p>
+            Ассаламу алейкум бир тууганым,
+            <br>
+            Аллах Таала айткан: «Мени эстегиле, мен
+            силерди эстеймин. Мага шүгүр кылгыла,
+            каапырдык кылбагыла».
+            (Бакара. 152-аят).
+            <br>
+            Аллах Таала айткан: «Эгеңди өз ичиңден купуя
+            түрдө, үнүңдү катуу чыгарбастан, эртең менен
+            жана кечинде корккон абалда эстегин.
+            (Аллахты эстөөдө) кайдыгерлерден болбогун».
+            (Аараф 205-аят).
+            <br>
+            Аллах Таала айткан: «Аллахты көбүрөөк эстегиле,
+            мүмкүн ийгиликке жетээрсиңер».
+        </p>
+        <p>
+            Андыктан кел бир тууганым сен дагы 5 мунот убактынды ушул
+            кунумдук зикирлерге болуп Аллахты эстеп 20 эле жолудан айтып кой!
+        </p>
+        <h3 class="animate__animated animate__bounce">Субхан-Аллах</h3>
+        <h3 class="animate__animated animate__bounce" id="one">Аль-Хамду ли-Ллях</h3>
+        <h3 class="animate__animated animate__bounce" id="two">Аллоху Акбар</h3>
+        <h3 class="animate__animated animate__bounce" id="three">Ля иляха иллАллах</h3>
+        <h3 class="animate__animated animate__bounce" id="four">Ля хавля ва ля куввата илля билляхи ль-'аллиййи ль-'азым</h3>
+
+        <button onclick="count()" id="button">0</button>
+
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
